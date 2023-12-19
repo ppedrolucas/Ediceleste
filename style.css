@@ -73,7 +73,6 @@ body {
 #banner .title {
   display: grid;
   place-items: center;
-  padding: 0 20px;
 }
 #banner .title .card {
   font-size: 1.5em;
