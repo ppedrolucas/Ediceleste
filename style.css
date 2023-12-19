@@ -57,7 +57,6 @@ body {
 }
 /*Primeira seção*/
 .main {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,6 +68,7 @@ body {
   grid-template-areas: "image title";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: calc(100vh - 100px);
+  justify-content: center;
 }
 #banner .title {
   display: grid;
@@ -82,11 +82,9 @@ body {
 #banner .image {
   display: grid;
   justify-content: end;
-  padding: 0 20px;
 }
 #banner .card .social-medias {
   padding: 10px 0;
-  width: 100%;
   display: flex;
   gap: 32px;
 }
@@ -141,8 +139,11 @@ body {
     grid-template-areas:
       "image"
       "title";
+    left: 0;
   }
-
+  #banner .title {
+    font-size: 0.7rem;
+  }
   #banner .image {
     justify-content: center;
   }
