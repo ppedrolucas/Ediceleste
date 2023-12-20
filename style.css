@@ -23,8 +23,8 @@ header {
   border-radius: 10px;
   position: absolute;
   width: 80%;
-  background-color: #a5a5a585;
-  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
   position: fixed;
   display: flex;
   align-items: center;
@@ -53,7 +53,7 @@ a:hover {
 }
 /*Corpo*/
 body {
-  background-color: #dadada;
+  background: url(assets/bg.jpg) no-repeat top center/cover fixed; /*SHORTHAND*/
 }
 /*Primeira seção*/
 .main {
@@ -79,8 +79,12 @@ body {
   display: grid;
   gap: 18px;
 }
+#banner .image #mobile {
+  display: none;
+}
 #banner .image {
   display: grid;
+  align-items: center;
   justify-content: end;
 }
 #banner .card .social-medias {
@@ -95,10 +99,78 @@ body {
 .social-medias a:hover {
   border-radius: 50%;
 }
-/*Segunda Seção*/
-.section2 {
+/*Terceira Seção*/
+.contact {
   height: 100vh;
+  display: grid;
+  place-items: center;
+  font-size: 1.5em;
+}
+.contact .titleUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0;
+}
+.contact .contactus {
+  width: 80%;
+  height: calc(100vh - 128px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.my-links a {
+  color: #31304d;
+}
+.my-links a i {
+  color: #7e30e1;
+
+  padding-right: 8px;
+}
+.contactus .my-links {
+  display: grid;
+  gap: 18px;
+}
+/*formulario*/
+.formulario {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+}
+fieldset {
+  display: grid;
+  gap: 28px;
+  border: none;
+}
+legend {
+  padding-bottom: 28px;
+}
+input,
+textarea {
+  font-size: 16px;
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #31304d;
+  outline: none;
+}
+.btnForm {
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background: #7e30e1;
+  color: #f3f3f3;
+  transition: 0.4s;
+}
+footer {
   background: #f3f3f3;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 700px) {
@@ -144,7 +216,33 @@ body {
   #banner .title {
     font-size: 0.7rem;
   }
+  #banner .image img {
+    display: none;
+  }
+  #banner .image #mobile {
+    display: block;
+  }
   #banner .image {
     justify-content: center;
+  }
+  #banner .card .social-medias {
+    gap: 26px;
+    font-size: 22px;
+  }
+
+  .contact {
+    font-size: 0.7rem;
+  }
+  .contact .titleUs {
+    padding: 16px 20px;
+    gap: 8px;
+  }
+  .contact .my-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .contactus {
+    flex-direction: column;
   }
 }
