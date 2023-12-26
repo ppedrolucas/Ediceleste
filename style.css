@@ -100,6 +100,50 @@ body {
   border-radius: 50%;
 }
 
+/*Minhas Lojas*/
+
+.my-lojas h2 {
+  font-size: 36px;
+  padding: 20px 0;
+}
+.my-lojas {
+  background-color: #f3f3f3;
+  display: grid;
+  place-items: center;
+}
+.my-lojas .loja {
+  height: 100vh;
+  display: flex;
+  width: 80%;
+  padding: 20px;
+  gap: 20px;
+}
+.loja img {
+  border-radius: 10px;
+}
+.loja .llama {
+  display: grid;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.loja .llama .lacta {
+  display: grid;
+  gap: 20px;
+}
+.llama .lacta button {
+  width: 141.2px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #7e30e1;
+  color: #fff;
+  box-shadow: 5px 4px 9px #31304d;
+  padding: 14px 24px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
 /*Fale comigo*/
 .contact {
   height: 100vh;
@@ -119,19 +163,24 @@ body {
   height: calc(100vh - 128px);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #contact .my-links {
-  font-size: 20px;
   display: grid;
-  gap: 20px;
+  place-items: center;
+  font-size: 20px;
 }
 .my-links a {
   color: #31304d;
+  padding-bottom: 20px;
 }
-.my-links a i {
+.my-links .barra a i {
   color: #7e30e1;
   padding-right: 8px;
+}
+.send-msg {
+  display: grid;
+  place-items: center;
 }
 
 /*formulario*/
@@ -232,7 +281,16 @@ footer {
     gap: 26px;
     font-size: 22px;
   }
+  /*Lojas*/
+  .my-lojas img {
+    width: 100%;
+  }
+  .my-lojas .loja {
+    flex-direction: column;
+    height: 75vh;
+  }
 
+  /*Fale Comigo*/
   .contact .titleUs {
     padding: 16px 20px;
     gap: 8px;
@@ -245,15 +303,11 @@ footer {
     font-size: 16.8px;
   }
   #contact {
-    flex-direction: column-reverse;
-  }
-  .my-links a {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 158px);
   }
   .formulario {
     font-size: 16.8px;
-  }
-  .contact #contact {
-    height: calc(100vh - 158px);
   }
 }
