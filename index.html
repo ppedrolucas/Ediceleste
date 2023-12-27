@@ -19,14 +19,14 @@
         <nav id="nav">
           <i id="btn-mobile" class="fa-solid fa-bars"></i>
           <ul id="menu">
-            <li><a href="/">Sobre Mim</a></li>
-            <li><a href="/">Minhas Lojas</a></li>
-            <li><a href="/">Fale Comigo</a></li>
+            <li><a href="#home">Sobre Mim</a></li>
+            <li><a href="#lojas">Minhas Lojas</a></li>
+            <li><a href="#contact">Fale Comigo</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="main">
+    <section id="home" class="main">
       <div id="banner">
         <div class="title">
           <div class="card">
@@ -57,28 +57,33 @@
     </section>
 
     <section class="my-lojas">
-      <h2 class="">Minhas Lojas</h2>
-    <div class="loja loja1">
-      <img src="assets/temporario.jpg" alt="">
-      <div class="llama">
-        <div class="lacta">
-        <h3>Ponteira Artesanais</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit asperiores nisi culpa.</p>
-        <button>Conhecer</button>
+      <h2 id="lojas" class="">Minhas Lojas</h2>
+      <div class="loja loja1">
+        <img src="assets/temporario.jpg" alt="" />
+        <div class="llama">
+          <div class="lacta">
+            <h3>Ponteira Artesanais</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+              asperiores nisi culpa.
+            </p>
+            <a class="btn" href="lojas/pontArt.html">Conhecer</a>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="loja loja2">
-      <div class="llama">
-        <div class="lacta">
-        <h3>Acessórios Diversificados</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit asperiores nisi culpa.</p>
-        <button>Conhecer</button>
+      <div class="loja loja2">
+        <div class="llama">
+          <div class="lacta">
+            <h3>Acessórios Diversificados</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
+              asperiores nisi culpa.
+            </p>
+            <a class="btn" href="lojas/acessorios.html">Conhecer</a>
+          </div>
         </div>
+        <img src="assets/temporario2.jpg" alt="" />
       </div>
-      <img src="assets/temporario2.jpg" alt="">
-    </div>
     </section>
 
     <section class="contact">
@@ -89,57 +94,72 @@
           me enviar uma mensagem.
         </p>
       </div>
+
       <div id="contact">
-        <div class="my-links">
-          <div class="barra">
-          <a href=""><i class="fa-brands fa-instagram"></i>@edimarasilvaalmeida</a>
-          <a href=""><i class="fa-brands fa-whatsapp"></i>(85) 4002-8922</a>
-          <a href=""><i class="fa-brands fa-threads"></i>@edimarasilvaalmeida</a>
-          <a href=""><i class="fa-solid fa-envelope"></i>edimarinhazinha@gmail.com</a>
-          </div>
+        <div class="formulario">
+          <form action="" method="post">
+            <fieldset>
+              <legend>Envie-me uma mensagem</legend>
+
+              <div class="input">
+                <label for="">
+                  Nome
+                  <input
+                    type="text"
+                    placeholder="Digite seu nome completo..."
+                  />
+                </label>
+              </div>
+
+              <div class="input">
+                <label for="">
+                  E-mail
+                  <input
+                    type="email"
+                    placeholder="Informe seu melhor E-mail..."
+                  />
+                </label>
+              </div>
+
+              <div class="input">
+                <label for="">
+                  Mensagem
+                  <textarea
+                    name=""
+                    id=""
+                    placeholder="Digite dua mensagem aqui..."
+                  ></textarea>
+                </label>
+              </div>
+              <button class="btn btnForm">Enviar</button>
+            </fieldset>
+          </form>
         </div>
-        <div class="send-msg">
-          <div class="formulario">
-            <form action="" method="post">
-              <fieldset>
-                <legend>Envie-me uma mensagem</legend>
-
-                <div class="input">
-                  <label for="">
-                    Nome
-                    <input type="text" placeholder="Digite seu nome completo..." />
-                  </label>
-                </div>
-
-                <div class="input">
-                  <label for="">
-                    E-mail
-                    <input
-                      type="email"
-                      placeholder="Informe seu melhor E-mail..."
-                    />
-                  </label>
-                </div>
-
-                <div class="input">
-                  <label for="">
-                    Mensagem
-                    <textarea
-                      name=""
-                      id=""
-                      placeholder="Digite dua mensagem aqui..."
-                    ></textarea>
-                  </label>
-                </div>
-                <button class="btnForm">Enviar</button>
-              </fieldset>
-            </form>
-            </div>
       </div>
     </section>
+
     <footer>
       <p>© Todos os direitos reservados</p>
     </footer>
+    <button onclick="backToTop()" class="btn" id="btnTop">
+      <i class="fa-solid fa-arrow-up-from-bracket"></i>
+    </button>
+    <script>
+      window.onscroll = function () {
+        scroll()
+      }
+      function scroll() {
+        var btn = document.getElementById("btnTop")
+        if (document.documentElement.scrollTop > 200) {
+          btn.style.display = "block"
+        } else {
+          btn.style.display = "none"
+        }
+      }
+      function backToTop() {
+        document.documentElement.scrollTop = 0
+      }
+    </script>
     <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/1e32b8079d.js"

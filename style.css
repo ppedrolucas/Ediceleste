@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
   color: #31304d;
+  scroll-behavior: smooth;
 }
 span {
   color: #7e30e1;
@@ -130,18 +131,24 @@ body {
   display: grid;
   gap: 20px;
 }
-.llama .lacta button {
+.btn {
   width: 141.2px;
   text-transform: uppercase;
   font-size: 1rem;
   border-radius: 8px;
   border: none;
+  border: #7e30e1 solid 1px;
   background: #7e30e1;
   color: #fff;
-  box-shadow: 5px 4px 9px #31304d;
+  box-shadow: 5px 4px 9px #31304dd7;
   padding: 14px 24px;
   cursor: pointer;
   transition: 0.4s;
+}
+.btn:hover {
+  background: transparent;
+  color: #7e30e1;
+  border: 1px solid #7e30e1;
 }
 
 /*Fale comigo*/
@@ -163,35 +170,19 @@ body {
   height: calc(100vh - 128px);
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
-#contact .my-links {
-  display: grid;
-  place-items: center;
-  font-size: 20px;
-}
-.my-links a {
-  color: #31304d;
-  padding-bottom: 20px;
-}
-.my-links .barra a i {
-  color: #7e30e1;
-  padding-right: 8px;
-}
-.send-msg {
-  display: grid;
-  place-items: center;
+  justify-content: center;
 }
 
 /*formulario*/
 .formulario {
   padding: 20px;
   background: rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(8px);
   border-radius: 10px;
   font-size: 20px;
+  width: 40%;
 }
 fieldset {
+  height: 410px;
   display: grid;
   gap: 28px;
   border: none;
@@ -210,12 +201,9 @@ textarea {
   outline: none;
 }
 .btnForm {
-  padding: 8px;
-  border: none;
-  border-radius: 10px;
-  background: #7e30e1;
-  color: #f3f3f3;
+  width: 100%;
   transition: 0.4s;
+  box-shadow: none;
 }
 footer {
   background: #f3f3f3;
@@ -223,6 +211,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#btnTop {
+  position: fixed;
+  right: 80px;
+  bottom: 95px;
+  display: none;
+  width: auto;
+  box-shadow: none;
+  padding: 8px;
 }
 
 @media (max-width: 700px) {
@@ -287,7 +284,7 @@ footer {
   }
   .my-lojas .loja {
     flex-direction: column;
-    height: 75vh;
+    height: 100vh;
   }
 
   /*Fale Comigo*/
@@ -305,9 +302,9 @@ footer {
   #contact {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 158px);
   }
   .formulario {
     font-size: 16.8px;
+    width: 100%;
   }
 }
