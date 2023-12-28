@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>EdiLojas</title>
   </head>
   <body>
@@ -51,7 +51,7 @@
             alt=""
             style="width: 220px"
           />
-          <img src="assets/Avatar3.png" alt="" style="width: 220px" />
+          <img src="assets/avatar.png" alt="" style="width: 220px" />
         </div>
       </div>
     </section>
@@ -59,7 +59,7 @@
     <section class="my-lojas">
       <h2 id="lojas" class="">Minhas Lojas</h2>
       <div class="loja loja1">
-        <img src="assets/temporario.jpg" alt="" />
+        <img src="assets/ponteiras.png" alt="" />
         <div class="llama">
           <div class="lacta">
             <h3>Ponteira Artesanais</h3>
@@ -82,7 +82,7 @@
             <a class="btn" href="lojas/acessorios.html">Conhecer</a>
           </div>
         </div>
-        <img src="assets/temporario2.jpg" alt="" />
+        <img src="assets/acessorios.png" alt="" />
       </div>
     </section>
 
@@ -97,7 +97,10 @@
 
       <div id="contact">
         <div class="formulario">
-          <form action="" method="post">
+          <form
+            action="https://formsubmit.co/2020infor36@gmail.com"
+            method="POST"
+          >
             <fieldset>
               <legend>Envie-me uma mensagem</legend>
 
@@ -106,7 +109,9 @@
                   Nome
                   <input
                     type="text"
+                    name="nome"
                     placeholder="Digite seu nome completo..."
+                    required
                   />
                 </label>
               </div>
@@ -116,7 +121,9 @@
                   E-mail
                   <input
                     type="email"
+                    name="email"
                     placeholder="Informe seu melhor E-mail..."
+                    required
                   />
                 </label>
               </div>
@@ -125,13 +132,19 @@
                 <label for="">
                   Mensagem
                   <textarea
-                    name=""
+                    name="message"
                     id=""
                     placeholder="Digite dua mensagem aqui..."
+                    required
                   ></textarea>
                 </label>
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://127.0.0.1:5500//thanks.html"
+                />
               </div>
-              <button class="btn btnForm">Enviar</button>
+              <button class="btn btnForm" type="submit">Enviar</button>
             </fieldset>
           </form>
         </div>
