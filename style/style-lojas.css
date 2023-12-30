@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;700&display=swap");
 
 :root {
+  --size-font-1: 1.25em;
   --color-blue-1: #86b6f6;
   --color-white-1: #f3f3f3;
   --color-white-2: #c6c6c6;
@@ -44,7 +45,7 @@ a {
   place-items: center;
   width: 100%;
   position: fixed;
-  font-size: 1.3rem;
+  font-size: var(--size-font-1);
 }
 a {
   color: var(--color-blue-1);
@@ -60,7 +61,7 @@ a:hover {
 }
 /*PRIMEIRA SESSÃO*/
 #body {
-  height: 90vh;
+  height: 100vh;
   padding-inline: 16px;
   font-size: 1.3rem;
   color: var(--color-white-1);
@@ -77,18 +78,18 @@ a:hover {
 }
 /*SERVIÇOS*/
 .services {
-  height: 100vh;
-  padding-inline: 16px;
+  max-height: max-content;
+  padding: 16px;
   background: var(--color-white-1);
   color: var(--color-blue-1);
-  font-size: 1.3rem;
+  font-size: var(--size-font-1);
 }
 .services .title {
   text-align: center;
-  padding: 16px;
+  margin-bottom: 16px;
 }
 .services .container {
-  height: calc(100vh - 100px);
+  height: auto;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 16px;
@@ -116,7 +117,38 @@ a:hover {
 }
 /*PRODUTOS*/
 .product {
-  height: 100vh;
-  padding-inline: 16px;
-  font-size: 1.3rem;
+  background: #fff;
+  background: var(--color-white-1);
+  max-height: max-content;
+  padding: 16px;
+  font-size: var(--size-font-1);
+}
+.product h1,
+.subTitle {
+  color: var(--color-blue-1);
+  text-align: center;
+  padding-bottom: 16px;
+}
+.container-prod {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+.container-prod .card-prod {
+  border: 1px solid var(--color-white-2);
+  font-weight: 300;
+  display: grid;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 8px;
+}
+.container-prod .card-prod img {
+  border-radius: 8px;
+  width: 100%;
+}
+.container-prod .card-prod #button {
+  border: 1px solid var(--color-blue-1);
+  color: var(--color-blue-1);
+  text-transform: uppercase;
+  padding: 10px;
 }
