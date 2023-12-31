@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;700&display=swap");
 
 :root {
-  --size-font-1: 1.25em;
+  --size-font-1: 1.1em;
   --color-blue-1: #86b6f6;
   --color-white-1: #f3f3f3;
   --color-white-2: #c6c6c6;
   --color-purple-1: #7e30e1;
-  --color-purple-2: #571f9f;
   --background-1: rgba(255, 255, 255, 0.1);
   --background-2: rgba(0, 0, 0, 0.05);
   --banner: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -36,9 +35,10 @@ a {
   background: var(--background-2);
 }
 /*MENU*/
+
 .navbar {
   background-color: var(--background-1);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--color-white-1);
   padding: 8px 0;
   display: grid;
@@ -86,7 +86,7 @@ a:hover {
 }
 .services .title {
   text-align: center;
-  margin-bottom: 16px;
+  padding: 32px 0;
 }
 .services .container {
   height: auto;
@@ -127,7 +127,13 @@ a:hover {
 .subTitle {
   color: var(--color-blue-1);
   text-align: center;
-  padding-bottom: 16px;
+  padding: 16px;
+}
+.product h1 {
+  padding-top: 32px;
+}
+.product .subTitle {
+  padding-bottom: 32px;
 }
 .container-prod {
   display: grid;
@@ -148,7 +154,16 @@ a:hover {
 }
 .container-prod .card-prod #button {
   border: 1px solid var(--color-blue-1);
+  border-radius: 4px;
   color: var(--color-blue-1);
   text-transform: uppercase;
   padding: 10px;
+}
+footer {
+  height: 100px;
+  background: var(--color-white-2);
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-weight: 300;
 }

@@ -22,7 +22,6 @@ header {
 .navbar {
   border: 1px solid #fff;
   border-radius: 10px;
-  position: absolute;
   width: 80%;
   background-color: rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(8px);
