@@ -6,3 +6,7 @@ function toggleMenu() {
 }
 
 btnMobile.addEventListener("click", toggleMenu)
+
+function btnBack(){
+  window.location = "../index.html"
+}

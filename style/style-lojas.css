@@ -11,6 +11,17 @@
   --banner: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../assets/Banner.png) no-repeat top center/cover fixed;
 }
+.acessorios {
+  --size-font-1: 1.1em;
+  --color-blue-1: #f11a7b;
+  --color-white-1: #f3f3f3;
+  --color-white-2: #c6c6c6;
+  --color-purple-1: #7e30e1;
+  --background-1: rgba(255, 255, 255, 0.1);
+  --background-2: rgba(0, 0, 0, 0.05);
+  --banner: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../assets/BannerAcess.jpg) no-repeat top center/cover fixed;
+}
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +55,7 @@ a {
   display: grid;
   place-items: center;
   width: 100%;
+  height: 140px;
   position: fixed;
   font-size: var(--size-font-1);
 }
@@ -166,4 +178,15 @@ footer {
   align-items: center;
   text-align: center;
   font-weight: 300;
+}
+#btnBack {
+  position: absolute;
+  position: fixed;
+  bottom: 85px;
+  right: 80px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  color: var(--color-white-1);
+  background: var(--color-blue-1);
 }
