@@ -4,7 +4,7 @@
   --size-font-1: 1.1em;
   --color-blue-1: #86b6f6;
   --color-white-1: #f3f3f3;
-  --color-white-2: #c6c6c6;
+  --color-white-2: #d6d6d6;
   --color-purple-1: #7e30e1;
   --background-1: rgba(255, 255, 255, 0.1);
   --background-2: rgba(0, 0, 0, 0.05);
@@ -27,6 +27,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -107,15 +108,17 @@ a:hover {
   gap: 16px;
 }
 .services .card {
+  height: 256px;
   display: grid;
-  text-align: center;
+  place-items: center;
   background: var(--background-2);
   padding: 16px;
   gap: 8px;
   border-radius: 8px;
 }
 .card #pikachu {
-  display: block;
+  height: 35px;
+  width: 35px;
   display: grid;
   justify-content: center;
 }
@@ -123,7 +126,7 @@ a:hover {
   background: var(--background-2);
   display: grid;
   place-items: center;
-  padding: 8px;
+  padding: 16px;
   border-radius: 50%;
   max-width: max-content;
 }

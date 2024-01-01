@@ -109,10 +109,11 @@ body {
 .my-lojas {
   background-color: #f3f3f3;
   display: grid;
+  gap: 40px;
   place-items: center;
 }
 .my-lojas .loja {
-  height: 100vh;
+  max-height: max-content;
   display: flex;
   width: 80%;
   padding: 20px;
@@ -120,6 +121,7 @@ body {
 }
 .loja img {
   border-radius: 10px;
+  max-width: 640px;
 }
 .loja .llama {
   display: grid;
@@ -152,7 +154,7 @@ body {
 
 /*Fale comigo*/
 .contact {
-  height: 100vh;
+  max-height: max-content;
   display: grid;
   place-items: center;
   font-size: 1.5rem;
@@ -165,8 +167,9 @@ body {
   padding: 20px 0;
 }
 .contact #contact {
+  margin: 40px 0;
   width: 80%;
-  height: calc(100vh - 128px);
+  max-height: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,7 +287,7 @@ footer {
   }
   .my-lojas .loja {
     flex-direction: column;
-    height: 100vh;
+    max-height: max-content;
   }
 
   /*Fale Comigo*/
