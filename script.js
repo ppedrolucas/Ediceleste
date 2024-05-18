@@ -1,20 +1,14 @@
-const btnMobile = document.getElementById("btn-mobile")
+const btnMobile = document.getElementById("btn-mobile");
 
 function toggleMenu() {
-  const nav = document.getElementById("nav")
-  nav.classList.toggle("active")
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active");
 }
 
-btnMobile.addEventListener("click", toggleMenu)
+btnMobile.addEventListener("click", toggleMenu);
 
-function btnBack() {
-  window.location = "../index.html"
-}
+let year = document.getElementById("year");
+let data = new Date();
+let ano = data.getFullYear();
 
-function btnLink() {
-  window.location.replace("https://www.instagram.com/pont.artesanal/")
-}
-
-function btnLink2() {
-  window.location.replace("https://www.instagram.com/edi.maraacessorios/")
-}
+year.innerHTML = ano;

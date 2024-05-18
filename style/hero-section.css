@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main #banner {
+  width: 80%;
+  display: grid;
+  grid-template-areas: "texto imagem";
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+#banner .title {
+  grid-area: "texto";
+  display: grid;
+  place-items: center;
+}
+.card h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.card p {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.card a,
+i {
+  color: var(--color-purple);
+  text-decoration: none;
+}
+.hero-banner {
+  grid-area: "imagem";
+  max-width: 100%;
+  border-radius: 50% 16px 16px;
+}
+@media (max-width: 700px) {
+  .main #banner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas:
+      "texto"
+      "imagem";
+    gap: 32px;
+  }
+  #banner .image {
+    grid-row: 1/2;
+    grid-area: "imagem";
+  }
+}

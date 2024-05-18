@@ -9,7 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="/style/styles.css" />
+    <link rel="stylesheet" href="/style/header.css" />
+    <link rel="stylesheet" href="/style/hero-section.css" />
+    <link rel="stylesheet" href="/style/footer.css" />
     <title>EdiLojas</title>
   </head>
   <body>
@@ -19,158 +22,67 @@
         <nav id="nav">
           <i id="btn-mobile" class="fa-solid fa-bars"></i>
           <ul id="menu">
-            <li><a href="#home">Sobre Mim</a></li>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre mim</a></li>
             <li><a href="#lojas">Minhas Lojas</a></li>
-            <li><a href="#contact">Fale Comigo</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section id="home" class="main">
+    <section class="main">
       <div id="banner">
         <div class="title">
           <div class="card">
-            <h1>Edimara Almeida c:</h1>
-            <h3>Empreendedora</h3>
+            <h1>Edimara Almeida</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
-              magni.
+              magni Lorem ipsum dolor sit amet consectetur..
             </p>
-            <div class="social-medias">
-              <a
-                href="https://www.instagram.com/edimarasilvaalmeida?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-              <a href=""><i class="fa-brands fa-threads"></i></a>
-              <a href=""><i class="fa-solid fa-envelope"></i></a>
-            </div>
+            <a href="#"
+              >Conhecer Agora <i class="fa-solid fa-arrow-right"></i
+            ></a>
           </div>
         </div>
         <div class="image">
-          <img
-            id="mobile"
-            src="assets/Avatar2.png"
-            alt=""
-            style="width: 220px"
-          />
-          <img src="assets/avatar.png" alt="" style="width: 220px" />
+          <img class="hero-banner" src="assets/hero-banner.jpeg" alt="Banner" />
         </div>
       </div>
     </section>
-    <section class="my-lojas">
-      <h2 id="lojas">Minhas Lojas</h2>
-      <div class="loja loja1">
-        <img src="assets/ponteiras.png" alt="" />
-        <div class="llama">
-          <div class="lacta">
-            <h3>Ponteira Artesanais</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-              asperiores nisi culpa.
-            </p>
-            <a class="btn" href="lojas/pontArt.html">Conhecer</a>
-          </div>
-        </div>
-      </div>
-      <div class="loja loja2">
-        <div class="llama">
-          <div class="lacta">
-            <h3>Acessórios Diversificados</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-              asperiores nisi culpa.
-            </p>
-            <a class="btn" href="lojas/acessorios.html">Conhecer</a>
-          </div>
-        </div>
-        <img src="assets/acessorios.png" alt="" />
-      </div>
-    </section>
-    <section class="contact">
-      <div class="titleUs">
-        <h2>Vamos produzir algo juntos?</h2>
-        <p>
-          Se você tem a ideia de algum projeto em mente, sinta-se a vontade para
-          me enviar uma mensagem.
-        </p>
-      </div>
-
-      <div id="contact">
-        <div class="formulario">
-          <form
-            action="https://formsubmit.co/2020infor36@gmail.com"
-            method="POST"
-          >
-            <fieldset>
-              <legend>Envie-me uma mensagem</legend>
-
-              <div class="input">
-                <label for="">
-                  Nome
-                  <input
-                    type="text"
-                    name="nome"
-                    placeholder="Digite seu nome completo..."
-                    required
-                  />
-                </label>
-              </div>
-
-              <div class="input">
-                <label for="">
-                  E-mail
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Informe seu melhor E-mail..."
-                    required
-                  />
-                </label>
-              </div>
-
-              <div class="input">
-                <label for="">
-                  Mensagem
-                  <textarea
-                    name="message"
-                    id=""
-                    placeholder="Digite dua mensagem aqui..."
-                    required
-                  ></textarea>
-                </label>
-                <input
-                  type="hidden"
-                  name="_next"
-                  value="http://ppedrolucas.github.io/Ediceleste/thanks.html"
-                />
-              </div>
-              <button class="btn btnForm" type="submit">Enviar</button>
-            </fieldset>
-          </form>
-        </div>
-      </div>
-    </section>
+    <section></section>
     <footer>
-      <p>&copy; 2024 Todos os direitos reservados</p>
+      <div class="container-footer">
+        <div class="copy">
+          <p>&copy; <span id="year"></span> Todos os direitos reservados</p>
+        </div>
+        <div class="redes">
+          <a
+            href="https://www.instagram.com/edimarasilvaalmeida?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          <a href=""><i class="fa-brands fa-threads"></i></a>
+          <a href=""><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
     </footer>
     <button onclick="backToTop()" class="btn" id="btnTop">
       <i class="fa-solid fa-arrow-up-from-bracket"></i>
     </button>
     <script>
       window.onscroll = function () {
-        scroll()
-      }
+        scroll();
+      };
       function scroll() {
-        var btn = document.getElementById("btnTop")
+        var btn = document.getElementById("btnTop");
         if (document.documentElement.scrollTop > 200) {
-          btn.style.display = "block"
+          btn.style.display = "block";
         } else {
-          btn.style.display = "none"
+          btn.style.display = "none";
         }
       }
       function backToTop() {
-        document.documentElement.scrollTop = 0
+        document.documentElement.scrollTop = 0;
       }
     </script>
     <script src="script.js"></script>
