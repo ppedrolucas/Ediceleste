@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       colors: {
         mineTitã: "#ffffff1a",
-        mineTitãDark: "rgba(0, 0, 0, 0.05)",
+        mineTitãDark: "#0000000d",
       },
     },
   },
