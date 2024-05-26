@@ -737,3 +737,11 @@ video {
     display: none;
   }
 }
+
+.dark\:bg-mineTit\E3 Dark:where(.dark, .dark *) {
+  background-color: #0000000d;
+}
+
+.hover\:dark\:bg-mineTit\E3 Dark:where(.dark, .dark *):hover {
+  background-color: #0000000d;
+}
