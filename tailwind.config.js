@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        mineTitã: "#ffffff1a",
-        mineTitãDark: "#0000000d",
+        sidebar: "#ffffff1a",
+        sidebarDark: "#0000000d",
       },
     },
   },

@@ -2,34 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 770px) {
-  @keyframes navbar-indo {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 80%;
-    }
+@keyframes navbar-indo {
+  0% {
+    width: 0;
   }
+}
 
-  .active {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 100vh;
-    padding: 16px;
-    background-color: #ffffff1a;
-    border-right: 1px solid #ffffff85;
-    border-radius: 0 16px 16px 0;
-    backdrop-filter: blur(8px);
-    display: flex;
-    gap: 1px;
-    flex-direction: column;
-    align-items: center;
-    animation: navbar-indo 0.5s;
-  }
-  .active a {
-    width: 100%;
-  }
+.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 16px;
+  background-color: #ffffff1a;
+  border-right: 1px solid #ffffff85;
+  border-radius: 0 16px 16px 0;
+  backdrop-filter: blur(8px);
+  display: flex;
+  gap: 1px;
+  flex-direction: column;
+  align-items: center;
+  animation: navbar-indo 0.5s;
 }

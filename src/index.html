@@ -7,9 +7,12 @@
     <title>EdiLojas</title>
   </head>
   <body class="">
-    <header class="absolute w-full">
+    <nav
+      id="navbar"
+      class="hidden w-10/12 lg:w-64 overflow-x-auto z-20 text-white"
+    >
       <div
-        class="container-md mx-2 mt-4 p-2 flex items-center justify-between rounded-lg bg-mineTitã dark:bg-mineTitãDark text-white"
+        class="bg-sidebar dark:bg-sidebarDark w-full px-4 py-2 mb-4 rounded-lg flex items-center justify-between"
       >
         <a href="#" class="flex items-center">
           <img
@@ -19,87 +22,52 @@
           />
           Edilmaria
         </a>
-        <nav id="navbar" class="hidden lg:block">
-          <div
-            class="lg:hidden bg-mineTitã dark:bg-mineTitãDark w-full h-12 mb-4 rounded-lg flex items-center justify-center"
-          >
-            <p class="text-lg">Menu de navegação</p>
-          </div>
-          <a
-            href="#"
-            class="px-4 py-8 rounded-lg transition duration-500 ease-in-out hover:bg-mineTitã hover:dark:bg-mineTitãDark"
-            >Home</a
-          >
-          <a
-            href="#"
-            class="px-4 py-8 rounded-lg transition duration-500 ease-in-out hover:bg-mineTitã"
-            >Sobre</a
-          >
-          <a
-            href="#"
-            class="px-4 py-8 rounded-lg transition duration-500 ease-in-out hover:bg-mineTitã"
-            >Serviços</a
-          >
-          <a
-            href="#"
-            class="px-4 py-8 rounded-lg transition duration-500 ease-in-out hover:bg-mineTitã"
-            >Contato</a
-          >
-        </nav>
-
-        <button onclick="darkMode()">
-          <img
-            id="switchMode"
-            src="assets/icons/darkMode.svg"
-            alt=""
-            srcset=""
-          />
-        </button>
-
-        <button class="lg:hidden" onclick="menu()">
-          <img src="assets/icons/burguer.svg" alt="" />
+        <button
+          onclick="darkMode()"
+          class="p-3 rounded-full transition duration-500 ease-in-out hover:bg-sidebar"
+        >
+          <img id="switchMode" class="size-4" src="assets/icons/darkMode.svg" />
         </button>
       </div>
-    </header>
-    <section
-      class="h-screen bg-gradient-to-r from-purple-500 to-pink-500"
-    ></section>
-    <!--<section class="main">
-      <div id="banner">
-        <div class="title">
-          <div class="card">
-            <h1>Edimara Almeida</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
-              magni Lorem ipsum dolor sit amet consectetur..
-            </p>
-            <a href="#"
-              >Conhecer Agora <i class="fa-solid fa-arrow-right"></i
-            ></a>
-          </div>
-        </div>
-        <div class="image">
-          <img class="hero-banner" src="assets/hero-banner.jpeg" alt="Banner" />
-        </div>
-      </div>
-    </section>
-    <section></section>
-    <footer>
-      <div class="container-footer">
-        <div class="copy">
-          <p>&copy; <span id="year"></span> Todos os direitos reservados</p>
-        </div>
-        <div class="redes">
-          <a
-            href="https://www.instagram.com/edimarasilvaalmeida?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-          <a href=""><i class="fa-brands fa-threads"></i></a>
-          <a href=""><i class="fa-solid fa-envelope"></i></a>
-        </div>
-      </div>
-    </footer>-->
+      <a
+        href="#"
+        class="px-4 py-8 w-full rounded-lg transition duration-500 ease-in-out text-white hover:bg-sidebar"
+        >Início</a
+      >
+      <a
+        href="#"
+        class="px-4 py-8 w-full rounded-lg transition duration-500 ease-in-out hover:bg-sidebar"
+        >Sobre</a
+      >
+      <a
+        href="#"
+        class="px-4 py-8 w-full rounded-lg transition duration-500 ease-in-out hover:bg-sidebar"
+        >Serviços</a
+      >
+      <a
+        href="#"
+        class="px-4 py-8 w-full rounded-lg transition duration-500 ease-in-out hover:bg-sidebar"
+        >Contato</a
+      >
+    </nav>
+    <main class="p-3 bg-gradient-to-r from-purple-500 to-pink-500">
+      <button
+        class="absolute z-10 right-3 top-3 p-4 rounded-lg shadow-lg backdrop-blur bg-sidebar dark:bg-sidebarDark hover:bg-sidebar hover:dark:bg-sidebarDark"
+        onclick="menu()"
+      >
+        <img class="size-4" src="assets/icons/burguer.svg" alt="" />
+      </button>
+
+      <section class="h-screen">
+        <h1>Título</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          eaque nihil nisi, dolores sunt expedita pariatur cumque, corrupti
+          corporis eum deleniti illo nulla temporibus unde qui iure aspernatur
+          beatae quia.
+        </p>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
